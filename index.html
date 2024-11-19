@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kbp.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+</head>
+<body>
+    <section class="full-landing-image" id="sec1">
+        <div class="cover-txt">
+        
+          <div class="sub-txt1" >
+            <h1>
+              피그마에서 수영하다 
+            </h1>
+
+            <h2>
+              design
+            </h2>
+
+            <p> 
+            키티버니포니의 브랜드 사이트 리디자인
+            </p>
+            <p>
+           적응형 형식으로 모바일과 웹 두가지 버전을 제작해 각 디바이스에 최적화 된 레이아웃을 만들고자 했습니다.
+            <br>
+            브랜드의 컨셉과 기획이 드러날 수 있게 만드는 것에 집중했습니다.
+          </p>
+          <p> 
+            웹 디자인은 모든 사람이 똑같은 구매경험을 할 수 있게끔 만드는 것이 가장 중요하다고 생각합니다. 배경과 글자의 명도대비가 4.5 이상이 되도록 했고, 목적이 있는 컨텐츠로만 구성해 제작했습니다.
+          </p>
+        </div>
+        </div>
+        <div class="cover-img">
+      
+        </div>
+      </section>
+
+    </div>
+    <div class="kbp">
+        <img src="img/KBP.png" alt="키티버니포니 웹디자인-모바일">
+        <img src="img/KBP-pc.png" alt="키티버니포니 웹디자인-웹">
+    </div>
+</body>
+<script>
+
+//물결 효과
+  let sec1 = document.getElementById("sec1");
+  let box = document.getElementById("box");
+    $(".full-landing-image").ripples({
+       resolution: 256, // 렌더링 값이 클수록 잔물결 효과가 느리게 전파
+       perturbance: 0.04, // 잔물경 굴절 강도. 0은 굴절 없음
+    });
+    $(".cover-img").ripples({
+resolution:156,
+perturbance:0.02,
+      })
+</script>
+</html>
